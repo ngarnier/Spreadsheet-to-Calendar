@@ -12,7 +12,7 @@ var endDate = 3; // insert (before semi-colon) the number of the column where yo
 var eventLocation = 4; // insert (before semi-colon) the number of the column where your event description is. Count starts at 0
 var addedToCalendar = 5; // insert (before semi-colon) the number of the column where your will insert "y" when an event has been added to the calendar. Count starts at 0
 var eventId = 6; // insert (before semi-colon) the number of the column where your will insert the ID of an event after it is created in the calendar. Count starts at 0
-var calendarId = "mailjet.com_srj0hhqie5lhmhcs9en2e6o8vc@group.calendar.google.com"; // insert (between quotes) the ID of your calendar. You'll find it in "Calendar Settings"/"Calendar Address"/"Calendar ID".
+var calendarId = ""; // insert (between quotes) the ID of your calendar. You'll find it in "Calendar Settings"/"Calendar Address"/"Calendar ID".
   
 // calendar variables
 var comingCalendar = CalendarApp.getCalendarById(calendarId);
