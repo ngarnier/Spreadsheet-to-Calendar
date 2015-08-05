@@ -20,7 +20,7 @@ var numValues = 0;
 
   for (var i = 0; i < values.length-1; i++) 
   {
-	if (values[i][addedToCalendar] == "") //checking if this event must be added to the calendar
+	if ((values[i][addedToCalendar] == "")&&(values[i][startDate] != "")&&(values[i][endDate] != "")) //checking if this event must be added to the calendar
 	{
       var newEventTitle = values[i][eventName]; // create the event name
       var newEvent = comingCalendar.createEvent(newEventTitle,
@@ -36,7 +36,6 @@ var numValues = 0;
        comingCalendar.getEventSeriesById(values[i][eventId]).deleteEventSeries();
        sheet.getRange(i+2,eventId+1).setValue("");
     }
-Logger.log(values[i][addedToCalendar]);
 numValues++;
   } // closing the loop
 } // closing pushToCalendar();
